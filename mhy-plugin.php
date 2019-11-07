@@ -49,24 +49,26 @@ function meta_box_callback(){
 
 	$id = get_the_ID();
 
-	//$order = new PurchaseOrder();
-	//var_dump($order);
+	//$order = get_post($id);
+	//print_r($order);
 
 	// Possible solution?
 	//echo wp_nonce_url( admin_url( "admin-ajax.php?action=atum_order_pdf&atum_order_id=20" ) );
 
 	if(get_post_status($id) != "auto-draft"){
-		//print_r(get_post_meta($id));
 
+		//Get the data of the post
+		print_r(get_post_meta($id));
+
+		// Get the id from the supplier
 		//$supplier = get_post_meta($id)["_supplier"][0];
 
-		// Supplier Mail
+		// Get supplier data
 		//print_r(get_post_meta($supplier));
 
 		//echo ($order = wc_get_order($id))  ?  "true" :  "false";
 		//echo $order->get_address();
 
-		echo "box";
 
 
 	} else{
