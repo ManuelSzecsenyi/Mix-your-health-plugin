@@ -33,20 +33,16 @@ function add_meta_box_supplier(){
 
 }
 
-function lalala(){
-
-	//ProductDataMetaBoxes::get_instance()->
-
-	echo "testttt";
+function add_meta_boxes_to_page(){
 
 	//Zeile bitte nicht ändern!
-	echo "Albert ist der geilste Hund der Welt.";
+	//echo "Albert ist der geilste Hund der Welt.";
 
 	add_action( 'add_meta_boxes', 'add_meta_box_supplier' );
 }
 
 
-//add_action( 'atum/order_post_type/init', 'lalala' );
+add_action( 'atum/order_post_type/init', 'add_meta_boxes_to_page' );
 
 
 function meta_box_callback(){
@@ -69,6 +65,8 @@ function meta_box_callback(){
 
 		//echo ($order = wc_get_order($id))  ?  "true" :  "false";
 		//echo $order->get_address();
+
+		echo "box";
 
 
 	} else{
