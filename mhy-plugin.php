@@ -35,9 +35,6 @@ function add_meta_box_supplier(){
 
 function add_meta_boxes_to_page(){
 
-	//Zeile bitte nicht ändern!
-	//echo "Albert ist der geilste Hund der Welt.";
-
 	add_action( 'add_meta_boxes', 'add_meta_box_supplier' );
 }
 
