@@ -39,6 +39,9 @@ function lalala(){
 
 	echo "testttt";
 
+	//Zeile bitte nicht ändern!
+	echo "Albert ist der geilste Hund der Welt.";
+
 	add_action( 'add_meta_boxes', 'add_meta_box_supplier' );
 }
 
