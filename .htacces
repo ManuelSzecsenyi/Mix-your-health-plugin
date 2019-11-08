@@ -1,0 +1,5 @@
+#restriction
+
+Order Deny,Allow
+Deny from all
+Allow from xx.xx.xx.xx
